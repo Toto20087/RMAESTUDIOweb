@@ -368,7 +368,8 @@ section {
 #textoBag{
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: left;
+  text-align: left;
 }
 
 #textoBag h2{
@@ -380,11 +381,40 @@ section {
   color: #9BA2B2;
 }
 
+#textoBag-right{
+  display: flex;
+  flex-direction: column;
+  justify-content: right;
+  align-items: end;
+  width: 50%;
+  text-align: right;
+}
+
+#textoBag-right h2{
+  color: #1c1c1c;
+  margin-bottom: 2rem;
+}
+
+#textoBag-right p{
+  color: #9BA2B2;
+}
+
+#textoBag-right svg{
+  color: #1c1c1c;
+  height: 60px;
+}
 
 .video{
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: right;
+  align-items: flex-end;
+}
+
+#video-left{
+  width: 45%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: left;
 }
 
 #textoBag{
