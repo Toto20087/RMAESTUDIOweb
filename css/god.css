@@ -115,18 +115,19 @@ section {
     cursor: pointer;
   }
   header {
-    background-color: #1c1c1c;
-    background-color: #1c1c1c;
+    background-color: #f4f4f4;
+    background-color: #f4f4f4;
   }
   header .abrir-menu {
-    color: #ffffff;
+    color: #1c1c1c;
   }
   header .abrir-menu svg {
     width: 2rem;
-    height: 1.7rem;
+    height: 5rem;
+    margin-left: .5rem;
   }
   header .cerrar-menu {
-    color: #d6d6d6;
+    color: #f4f4f4;
   }
   header #header-navbar {
     opacity: 0;
@@ -141,6 +142,7 @@ section {
     background-color: #1c1c1c;
     padding: 2rem;
     box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5);
+    color: #f4f4f4;
   }
   header #header-navbar.visible {
     opacity: 1;
@@ -172,6 +174,23 @@ section {
   color: #1c1c1c;
   transition: 0.3s ease;
 }
+
+@media screen and (max-width: 768px) {
+  .navbar-brand {
+    color: #f4f4f4;
+  }
+  
+  .navbar-brand h3{
+    color:#f4f4f4;
+  }
+  
+  #nav-list .nav-link {
+    color: #f4f4f4;
+    transition: 0.3s ease;
+  }
+  
+}
+
 #nav-list .nav-link li a {
   opacity: 0.5;
 }
@@ -220,6 +239,12 @@ section {
 .jumbotron .container {
   position: relative;
   z-index: 1;
+}
+
+@media screen and (max-width: 768px) {
+  .jumbotron .container h1 {
+    font-size: 3rem;
+  }
 }
 
 .jumbotron:before {
@@ -390,6 +415,12 @@ section {
   text-align: right;
 }
 
+@media screen and (max-width: 425px) {
+  #textoBag-right{
+    width: 100%;
+  }  
+}
+
 #textoBag-right h2{
   color: #1c1c1c;
   margin-bottom: 2rem;
@@ -452,6 +483,8 @@ section {
 .jumbotron-single h1 {
   font-size: 15rem !important;
 }
+
+
 
 .jumbotron-single p{
   line-height: normal;
